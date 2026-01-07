@@ -1,6 +1,6 @@
-<?php require('partials/head.php') ?>
-<?php require('partials/nav.php') ?>
-<?php require('partials/banner.php') ?>
+<?php require_once 'partials/head.php' ?>
+<?php require_once 'partials/nav.php' ?>
+<?php require_once 'partials/banner.php' ?>
 
 <main>
     <div class="mx-auto max-w-7xl px-4 py-6 sm:px-6 lg:px-8">
@@ -8,9 +8,9 @@
             <a href="/notes" class="text-blue-500 underline">Go Back...</a>
         </p>
         <p>
-            <?= $note['body'] ?>
+            <?= htmlspecialchars($note['body']) ?>
         </p>
     </div>
 </main>
 
-<?php require('partials/footer.php') ?>
+<?php require_once 'partials/footer.php' ?>
